@@ -2,7 +2,7 @@ const express = require('express');
 const res = require('express/lib/response');
 const app = express();
 app.get('/', (req, res) => {
-    res.send('hello brow')
+    res.json({mensagem: 'ola, mundo'})
 });
 app.listen(8080, () =>{
     let data = new Date();
